@@ -1,0 +1,14 @@
+def obtener_valores_por_claves(diccionario, *args):
+    valores = [diccionario.get(clave) for clave in args]
+    return valores
+
+diccionario = {"a":3, "b":5, "c":7, "d":9, "e":2}
+claves_a_buscar = 'a', 'c', 'e'
+resultado = obtener_valores_por_claves(diccionario, *claves_a_buscar)
+print(resultado)
+
+
+
+
+
+

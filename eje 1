@@ -1,0 +1,6 @@
+def sumar(*args):
+    a=0
+    for b in args:
+        a+=b
+        return a
+    print(sumar(4,8,9))

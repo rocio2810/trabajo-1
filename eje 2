@@ -1,0 +1,7 @@
+def crear_oracion(cadena, *args):
+    palabras = ' '.join(args)
+    return cadena, palabras
+cadena_inicial = "el gato come"
+oracion_resultante = crear_oracion(cadena_inicial, "un", "rico", "pescado")
+print(oracion_resultante)
+

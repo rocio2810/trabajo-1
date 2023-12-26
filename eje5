@@ -1,0 +1,13 @@
+def informacion_de_contacto(nombre, **kwargs):
+    info_contacto = "Nombre"
+    for tipo, dato in kwargs.items():
+        info_contacto += f"{tipo}: {dato}\n"
+    return info_contacto
+
+nombre_persona ="marina suarez"
+correo = "mercedes@gmail.com"
+telefono = "182-202-1718"
+direccion = "emilio castro, 696"
+
+resultado = informacion_de_contacto(nombre_persona, Correo=correo, Teléfono=telefono, Dirección=direccion)
+print(resultado)
